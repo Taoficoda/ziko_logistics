@@ -1,0 +1,44 @@
+==========================================================================
+Create repository on github account.
+
+On the IDE terminal,
+
+# Initialize new Git repository
+git init
+
+# Set global Git username
+git config --global user.name "Tao"  # This is the username of your github account
+
+# Set global Git email
+git config --global user.email "aribs@gmail.com"  # This is the email of your github account
+
+# Check current status of files
+git status          
+
+# Stage file for commit
+git add ziko_logistics_data.csv
+
+# Commit staged changes with message
+git commit -m "first commit"
+
+# Add remote repository named 'origin' for pushing/pulling changes
+git remote add origin git@github.com:Taoficoda/ziko_logistics.git
+
+# Push local 'master' branch to 'origin' remote and set upstream tracking
+git push -u origin master    --- Note 'master' is the name of the local or source branch we are working on.
+
+
+Note:
+
+On the command line, type
+
+# To view the directory where python is installed
+where python 
+where conda
+where hadoop
+where pyspark
+
+# To see the base python version 
+# Python --version
+
+ED25519 key fingerprint is SHA256:+DiY3wvvV6TuJJhbpZisF/zLDA0zPMSvHdkr4UvCOqU
