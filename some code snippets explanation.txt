@@ -22,14 +22,18 @@ git add ziko_logistics_data.csv
 git commit -m "first commit"
 
 # Add remote repository named 'origin' for pushing/pulling changes
-git remote add origin git@github.com:Taoficoda/ziko_logistics.git
+git remote add origin https://github.com/Taoficoda/ziko_logistics
 
 # Push local 'master' branch to 'origin' remote and set upstream tracking
 git push -u origin master    --- Note 'master' is the name of the local or source branch we are working on.
 
+# Add all files to repo, the dot(.) means all files
+git add .
 
-Note:
 
+--------------------------------------------------------
+Notes:
+----------------------------------------------
 On the command line, type
 
 # To view the directory where python is installed
