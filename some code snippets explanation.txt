@@ -25,7 +25,7 @@ git commit -m "first commit"
 git remote add origin https://github.com/Taoficoda/ziko_logistics
 
 # Push local 'master' branch to 'origin' remote and set upstream tracking
-git push -u origin master    --- Note 'master' is the name of the local or source branch we are working on.
+git push -u origin master    --- Note 'master' or 'main' is the name of the local or source branch we are working on. 
 
 # Add all files to repo, the dot(.) means all files
 git add .
@@ -45,4 +45,7 @@ where pyspark
 # To see the base python version 
 # Python --version
 
-ED25519 key fingerprint is SHA256:+DiY3wvvV6TuJJhbpZisF/zLDA0zPMSvHdkr4UvCOqU
+
+navicat data modelling - https://www.youtube.com/watch?v=GUjMfrwrtco&t=62s  
+
+https://www.youtube.com/watch?v=rB5_hl9Q2BM
