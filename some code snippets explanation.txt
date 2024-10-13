@@ -30,10 +30,9 @@ git push -u origin master    --- Note 'master' or 'main' is the name of the loca
 # Add all files to repo, the dot(.) means all files
 git add .
 
-
 --------------------------------------------------------
 Notes:
-----------------------------------------------
+-------------------------------------------------------
 On the command line, type
 
 # To view the directory where python is installed
@@ -46,6 +45,27 @@ where pyspark
 # Python --version
 
 
-navicat data modelling - https://www.youtube.com/watch?v=GUjMfrwrtco&t=62s  
+navicat data modelling - https://www.youtube.com/watch?v=GUjMfrwrtco&t=62s
+navicat data modelling  - https://www.youtube.com/watch?v=rB5_hl9Q2BM
 
-https://www.youtube.com/watch?v=rB5_hl9Q2BM
+Code Snippet for date conversion Explained
+astype('datetime64[ns]') will raise an error if it encounters invalid formats.
+pd.to_datetime() will handle different formats and return NaT for invalid dates
+
+astype() assumes all values are already in a format that can be cast to datetime.
+pd.to_datetime() parses various date formats and can even infer them.
+
+=========================================================================================================================================
+The .head() atttribute will not work for the below code snippet for the following reasons
+product = ziko_df[['Product_ID','Product_List_Title','Quantity','Unit_Price']].copy().drop_duplicates(inplace=True)
+
+Reasons:
+The issue is caused by the fact that drop_duplicates(inplace=True) modifies the DataFrame in place and returns None. 
+This means that the customer variable is being set to None, so when you call customer.head(), it fails.
+To fix this, you can either remove the inplace=True argument or use the method without assigning it to customer. Here's how you can fix it:
+........................................................................................................................................
+customer = ziko_df[['Customer_ID', 'Customer_Name', 'Customer_Phone', 'Customer_Email', 'Customer_Address']].copy()
+customer.drop_duplicates(inplace=True)
+customer.head()
+...........................................................................................................................................
+========================================================================================================================================================
